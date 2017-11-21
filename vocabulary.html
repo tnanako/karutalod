@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>かるたの語彙</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <!-- アイコンフォントの利用方法 http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+   
+</head>
+
+<body id="top">
+    <div class="nav">
+        <ul class="nav-group">
+            <li><a href="/index.html" class="active"><i class="fa fa-home"></i> ホーム</a></li>
+            <li><a href="/localKaruta.html">郷土かるた</a></li>
+            <li><a href="/oguraHyakunin.html">小倉百人一首</a></li>
+            <li><a href="/lod.html">LODとは</a></li>
+        </ul>
+    </div>
+  <center><img class="img-thumbnail" src="../img/local_logo.jpg"></center>
+    <div class="header">
+        <h1 class="header-title">かるたの語彙</h1>
+        <p class="header-description">かるたのLOD(Linked Open Data)のために語彙を定義するサイトです。</p>
+
+    </div>
+
+    <div class="content">
+        <div class="article">
+            <h3 class="article-paragraph-title">かるたの語彙</h3>
+            <p class="article-paragraph">
+              郷土かるたのLODで独自定義した語彙
+		<table class="line">
+
+		<thead>
+		 <tr>
+	        <th>プロパティ(rdfs:label)</th>
+	        <th>説明:(rdfs:comment)</th>
+	        <th>上位のプロパティ(rdfs:subPropertyOf)</th>
+	        </tr>
+ 		</thead>
+  		<tr>
+    			<td>textOfYomi</td>
+    			<td>読札（字札）のテキスト</td>
+    			<td>readOutCard</td>
+  		</tr>
+  		<tr>
+    			<td>imageOfYomi</td>
+    			<td>読札（字札）の画像</td>
+    			<td>readOutCard</td>
+  		</tr>
+  		<tr>
+    			<td>textOfTori</td>
+    			<td>取札（絵札）のテキスト</td>
+    			<td>PickUpCard</td>
+  		</tr>
+  		<tr>
+    			<td>textOfTori</td>
+    			<td>取札（字札）の画像</td>
+    			<td>PickUpCard</td>
+  		</tr>
+  		<tr>
+    			<td>initial</td>
+    			<td>先頭の一文字（いろは）</td>
+    			<td></td>
+  		</tr> 
+		</table>
+
+           </p>
+            <p class="article-paragraph">
+              小倉百人一首のLODの語彙（検討中）
+                 <ul>
+                   <li> 読札（絵札）のテキスト:textOfYomi</li>
+                   <li> 読札（絵札）の画像:imageOfYomi</li>
+                   <li> 取札（字札）のテキスト:textOfTori</li>
+                   <li> 取札（字札）のテキスト:imageOfTori</li>
+                   <li> 決まり字:uniqueSyllable</li>
+                   <li> 歴史的仮名遣い:historicalTranscription</li>
+                   <li> 上の句:firstHalf</li>
+		   <li> 上の句読み：transcriptionOfFirstHalf</li>
+                   <li> 上の句:secondHalf</li>
+		   <li> 上の句読み：transcriptionOfSecondHalf</li>
+       		</ul>
+            </p>
+        </div> 
+
+        <div class="article">
+
+            <h3 class="article-paragraph-title">NameSpace</h3>
+            <p class="article-paragraph">
+		http://karutalod.web.fc2.com/vocabulary/ 
+		</p>		　
+        </div> 
+     </div>
+
+
+    <div class="footer">
+        <div class="footer-nav">
+        <div class="address-body">
+            <strong class="address-body-name">かるたLOD 製作者 Nanako Takahashi</strong>
+        </div>           
+
+            <ul class="footer-nav-group">
+                <li><a href="http://user.linkdata.org/user/tnanako/work"> LinkData</a></li>
+                <li><a href="https://researchmap.jp/tnanako/"></i> Researchmap</a></li>
+                <li><a href="https://www.facebook.com/nanako.takahashi.96">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="footer-text">このホームページは、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">CC-BY</a> で公開しています。各データセットはそれぞれのライセンスに従ってください。</div>
+    </div>
+
+
+    <a href="#top" class="btn-pagetop"><i class="fa fa-arrow-up"></i></a>
+
+</body>
+</html>

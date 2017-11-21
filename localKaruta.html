@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>郷土かるたLOD</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <!-- アイコンフォントの利用方法 http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+   
+</head>
+
+<body id="top">
+    <div class="nav">
+        <ul class="nav-group">
+            <li><a href="/index.html" class="active"><i class="fa fa-home"></i> ホーム</a></li>
+            <li><a href="/localKaruta.html">郷土かるた</a></li>
+            <li><a href="/oguraHyakunin.html">小倉百人一首</a></li>
+            <li><a href="/lod.html">LODとは</a></li>
+        </ul>
+    </div>
+  <center><img class="img-thumbnail" src="../img/local_logo.jpg"></center>
+    <div class="header">
+        <h1 class="header-title">郷土かるたLOD</h1>
+        <p class="header-description">郷土かるたのLOD(Linked Open Data)のためのウェブサイトです。</p>
+
+    </div>
+
+    <div class="content">
+        <div class="article">
+            <h3 class="article-paragraph-title">郷土かるたLOD</h3>
+            <p class="article-paragraph">
+              郷土かるたのLOD化を進めています。
+                 <ul>
+                   <li> <a href="http://idea.linkdata.org/idea/idea1s2086i" >郷土かるたLODデータセットの考え方</a></li>
+                   <li> <a href="http://idea.linkdata.org/idea/idea1s2085i" >郷土かるたLODの活用アイデア</a></li>
+                   <li> <a href="http://www.slideshare.net/tnanako64/local-karuta-project" >郷土かるたLOD企画概要</a></li>
+                   <li> <a href="/lod.html">LODとは</a></li>
+       		</ul>
+            </p>
+ 
+              <p class="article-paragraph">
+               <a href="" class="btn btn_sm btn_normal">News</a>
+              本企画は、<a href="http://lodc.jp/2015/concrete5/blog/2017-02-17">LODチャレンジ2016</a>でアイデア部門優秀賞を受賞しました。
+            </p>
+
+
+           <h3 class="article-paragraph-title">郷土かるたLODデータセット</h3>
+                <p class="article-paragraph">
+               現在作成済みの郷土かるたのデータセットです。
+                <ul>
+                 <li> <a href="http://linkdata.org/work/rdf1s4829i" >郷土かるたのデータセット一覧</a></li>
+                 <li>  <a href="http://linkdata.org/work/rdf1s4831i" >上毛かるたのデータセット</a></li>
+                 <li>  <a href="http://linkdata.org/work/rdf1s4832i" >越前若狭いろはかるたのデータセット</a></li>
+                 <li>  <a href="http://linkdata.org/work/rdf1s4871i" >武蔵府中郷土かるたのデータセット</a></li>
+           	 <li>  <a href="http://linkdata.org/work/rdf1s5113i" >房総子どもかるたのデータセット</a></li>
+          </ul>
+          </p>
+
+           <h3 class="article-paragraph-title">郷土かるたLODデータモデル</h3>
+                <p class="article-paragraph">
+		かるたは、読札と取札の2枚のカードが1つのセットとなっていることが特徴です。公開するデータ項目は以下のように設定しています。
+		<ul>
+                 <li>読札のテキスト</li>
+		 <li>取札の先頭の一字</li>
+	         <li>絵札の画像 -要許諾</li>
+		 <li>解説のテキスト -要許諾</li>
+		<li>関連する地名および緯度・経度</li>
+		<li>関連する人名・地名・事物とDBPediaへのリンク</li>
+		 <li>郷土かるた名（書誌情報）</li>
+　　　　　　　　</ul>
+
+                <p class="article-paragraph">郷土かるたのデータモデルの設計においては、今後、かるた全般（いろはかるたや百人一首）にも適用できるモデルとすることを念頭に置いた。当初、読札と取札をリソースとして階層構造をとる方式も検討したが、公開プラットフォームとして予定していたLinkDataは一覧性の高い表形式でデータを扱っているため、フラットな構造での表現とし、リソースの種類ごとにテーブルをわけて複数のデータセットで表現することとした。今後は、絵札の画像の追加やかるたの種類の拡大にあわせて、データモデルの変更も検討していく。
+                 <center><img class="img-thumbnail" src="../img/graph-draw_sekitakakazu.jpg"></center>
+          </p>
+
+
+        </div> 
+     </div>
+
+
+    <div class="footer">
+        <div class="footer-nav">
+        <div class="address-body">
+            <strong class="address-body-name">かるたLOD 製作者 Nanako Takahashi</strong>
+        </div>           
+
+            <ul class="footer-nav-group">
+                <li><a href="http://user.linkdata.org/user/tnanako/work"> LinkData</a></li>
+                <li><a href="https://researchmap.jp/tnanako/"></i> Researchmap</a></li>
+                <li><a href="https://www.facebook.com/nanako.takahashi.96">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="footer-text">このホームページは、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">CC-BY</a> で公開しています。各データセットはそれぞれのライセンスに従ってください。</div>
+    </div>
+
+
+    <a href="#top" class="btn-pagetop"><i class="fa fa-arrow-up"></i></a>
+
+</body>
+</html>
