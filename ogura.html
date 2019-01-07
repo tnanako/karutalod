@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>小倉百人一首LOD</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <!-- アイコンフォントの利用方法 http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+   
+</head>
+
+<body id="top">
+    <div class="nav">
+        <ul class="nav-group">
+            <li><a href="/index.html" class="active"><i class="fa fa-home"></i> ホーム</a></li>
+            <li><a href="/localKaruta.html">郷土かるた</a></li>
+            <li><a href="/ogura.html">小倉百人一首</a></li>
+            <li><a href="/lod.html">LODとは</a></li>
+        </ul>
+    </div>
+  <center><img class="img-thumbnail" src="../img/ogura_logo.jpg"></center>
+    <div class="header">
+        <h1 class="header-title">小倉百人一首LOD</h1>
+        <p class="header-description">小倉百人一首のLOD(Linked Open Data)のためのウェブサイトです。</p>
+
+    </div>
+
+    <div class="content">
+        <div class="article">
+            <h3 class="article-paragraph-title">小倉百人一首LOD</h3>
+            <p class="article-paragraph">
+              小倉百人一首のLOD化を進めています。
+                 <ul>
+                   <li> <a href="http://idea.linkdata.org/idea/idea1s2398i" >小倉百人一首LODの概要</a></li>
+                   <li> <a href="http://idea.linkdata.org/idea/idea1s2399i" >小倉百人一首LOD活用アイデア</a></li>
+
+       		</ul>
+            </p>
+ 
+           <h3 class="article-paragraph-title">小倉百人一首LODデータセット</h3>
+                <p class="article-paragraph">
+               現在作成済みの小倉百人一首のデータセットです。
+                <ul>
+                 <li> <a href="http://linkdata.org/work/rdf1s6834i" >小倉百人一首かるたデータ</a></li>
+                 <li>  <a href="http://linkdata.org/work/rdf1s6833i" >小倉百人一首の歌人データ</a></li>
+                 <li>  <a href="http://linkdata.org/work/rdf1s6836i" >小倉百人一首オープンデータ画像</a></li>
+                	<ul>　
+                 	<li>  <a href="http://linkdata.org/work/rdf1s6837i" >小倉百人一首（国立国会図書館所蔵）</a></li>
+                 	<li>  <a href="http://linkdata.org/work/rdf1s6838i" >小倉擬百人一首（国立国会図書館所蔵）</a></li>
+                 	<li>  <a href="http://linkdata.org/work/rdf1s6839i" >小倉山荘色紙型和歌（国立国会図書館所蔵）</a></li>
+           	 	<li>  <a href="http://linkdata.org/work/rdf1s6840i" >小倉百首（大阪市立図書館所蔵）</a></li>
+           	 	<li>  <a href="http://linkdata.org/work/rdf1s6856i" >小倉百人一首（国文学研究資料館所蔵）</a></li>
+          	 	<li>  <a href="http://linkdata.org/work/rdf1s7295i" >小倉百人一首（国文学研究資料館所蔵）</a></li>
+	     	　　    </ul>
+     	　　     </ul>
+          </p>
+
+           <h3 class="article-paragraph-title">小倉百人一首LODデータモデル</h3>
+                <p class="article-paragraph">
+
+		かるたゲームに必要な情報は、<a href="http://linkdata.org/work/rdf1s6834i" >小倉百人一首かるたデータ</a>および<a href="http://linkdata.org/work/rdf1s6833i" >小倉百人一首の歌人</a>の２つのデータセットを用意しています。競技かるたで利用される公式かるたの情報をもとに、かるた遊びや坊主めくりのゲームを作成するために必要な情報をデータ化しています。各要素を整理し、RDFで提供できるようにしています。また、歌枕として詠まれた地名の緯度経度等、他の情報資源ともリンクしました。<br>
+		加えて、百人一首は、かるただけでなく、刊本・写本・錦絵などの形態があり、近年、図書館が所蔵する古典籍画像にオープンなライセンスを付与されて公開されています。これらを、 <a href="http://linkdata.org/work/rdf1s6836i" >小倉百人一首のオープンデータ画像リスト</a>として提供するとともに、オープンデータ画像へのリンクと翻刻をそれぞれの資料ごとに作成しています。<br>
+RDFの作成にあたっては、一般的な語彙を用いつつ、かるたに特有の語彙は独自定義を用いました。かるたは読札と取札の2枚のカードが1つのセットとなっていることが特徴です。百人一首は、いろはかるた（郷土かるたを含む）と逆に読札に絵があり、取札はテキストのみです。語彙については、<a href="../vocabulary/index.html">かるたの語彙のページ</a>もごらんください。
+
+
+
+
+    <div class="content">
+        <div class="article">
+            <h3 class="article-paragraph-title">小倉百人一首LODの語彙の一覧</h3>
+            <p class="article-paragraph">
+              小倉百人一首かるたデータ
+		<table class="line">
+
+		<thead>
+		 <tr>
+	        <th>プロパティ(rdfs:label)</th>
+	        <th>説明:(rdfs:comment)</th>
+  	        <th>詳細（dcterms:description）</th>  
+	        </tr>
+ 		</thead>
+
+
+  		<tr>
+    			<td>rdfs:label</td>
+	  		<td>小倉百人一首のラベル（和歌）</td>
+ 	    		<td>リソースのラベルは和歌の全文です。表記は競技かるたの公式版によりました。</td>  
+  		</tr>
+  		<tr>
+    			<td>karuta:historicalTranscription</td>
+   			<td>ヨミ（歴史的かな遣い）</td>
+	   		<td>和歌のよみを歴史的かな遣いで記入しています。</td> 
+  		</tr> 
+
+  		<tr>
+    			<td>dc:creator</td>
+   			<td>歌人（作者）のテキスト</td>
+	   		<td>競技かるたの読札（絵札）にかかれた歌人の名前をリテラルで記入しています。</td> 
+  		</tr>
+
+  		<tr>
+    			<td>dcterms:creator</td>
+   			<td>歌人（作者）のリソース</td>
+	   		<td>歌人のリソースへのリンクです</td> 
+  		</tr> 
+
+  		<tr>
+    			<td>bibo:number</td>
+   			<td>歌番号</td>
+	   		<td>歌番号を算用数字（整数）で記入しています</td> 
+  		</tr> 
+
+  		<tr>
+    			<td>karuta:textOfYomi</td>
+    			<td>読札（絵札）のテキスト</td>
+  			<td>競技かるたの読札のテキストです</td>  
+  		</tr>
+
+  		<tr>
+    			<td>karuta:textOfTori</td>
+    			<td>取札（字札）のテキスト</td>
+ 	 		<td>競技かるたの取札のテキストです</td> 
+  		</tr>
+
+  		<tr>
+    			<td>karuta:imageOfYomi</td>
+    			<td>読札（絵札）の画像</td>
+  			<td>かるたの絵札の画像です。代表的なものとして、Wikimedia Commonsの画像にリンクしています</td> 
+  		</tr>
+
+  		<tr>
+    			<td>karuta:uniqueSyllable</td>
+   			<td>決まり字</td>
+	   		<td>上の句の決まり字を記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>karuta:firstHalf</td>
+   			<td>上の句</td>
+	   		<td>上の句の漢字・仮名まじりの表記を記入しています</td> 
+  		</tr> 
+
+  		<tr>
+    			<td>karuta:transcriptionOfFirstHalf</td>
+   			<td>上の句のヨミ</td>
+	   		<td>上の句のヨミを現代かな遣いで記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>karuta:secondHalf</td>
+   			<td>下の句</td>
+	   		<td>下の句の漢字・仮名まじりの表記を記入しています</td> 
+  		</tr> 
+
+  		<tr>
+    			<td>karuta:transcriptionOfSecondHalf</td>
+   			<td>下の句のヨミ</td>
+	   		<td>下の句のヨミを現代かな遣いで記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>karuta:bonze</td>
+   			<td>坊主めくり用区分</td>
+	   		<td>絵札の人物にあわせて、殿、姫、坊主のいずれかを記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>dc:source</td>
+   			<td>出展の勅選和歌集</td>
+	   		<td>勅撰和歌集をリテラルで記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>dc:subject</td>
+   			<td>部立（主題）</td>
+	   		<td>和歌の主題となる部立をリテラルで記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>dc:spacial</td>
+   			<td>歌枕（地名）</td>
+	   		<td>和歌には「歌枕」という地名が読み込まれているものがあります。ここには歌枕をリテラルで記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>geo:lat</td>
+   			<td>歌枕の緯度</td>
+	   		<td>dc:spacialの地名１件の緯度を記入します</td> 
+  		</tr>
+  		<tr>
+    			<td>geo:long</td>
+   			<td>歌枕の経度</td>
+	   		<td>dc:spacialの地名１件の経度を記入します</td> 
+  		</tr>
+  		<tr>
+    			<td>dcterm:refenreces</td>
+   			<td>古典籍オープンデータ画像へのリンク</td>
+	   		<td>図書館等で公開されているオープンデータ画像のリソースへのリンクです</td> 
+  		</tr>
+  		<tr>
+    			<td>dcterms:isPartOf</td>
+   			<td>上位書誌へのリンク</td>
+	   		<td>小倉百人一首かるたデータをまとめるリソースを設定しています。</td> 
+  		</tr>
+
+		</table>
+	    </p>
+
+            <p class="article-paragraph">
+              小倉百人一首の歌人
+		<table class="line">
+
+		<thead>
+		 <tr>
+	        <th>プロパティ(rdfs:label)</th>
+	        <th>説明:(rdfs:comment)</th>
+  	        <th>詳細（dcterms:description）</th>  
+	        </tr>
+ 		</thead>
+
+  		<tr>
+    			<td>foaf:name</td>
+   			<td>歌人の名前</td>
+	   		<td>作者の名前を漢字表記で記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>karuta:historicalTranscription</td>
+   			<td>ヨミ（歴史的かな遣い）</td>
+	   		<td>歌人の名前のヨミを歴史的かな遣いで記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>karuta:transcription</td>
+   			<td>ヨミ（現代かな遣い）</td>
+	   		<td>歌人の名前のヨミを現代かな遣いで記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>karuta:roamanTranscription</td>
+   			<td>ヨミ（ローマ字表記）</td>
+	   		<td>歌人の名前のヨミのローマ字表記を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>mads:hasTranslationVariant</td>
+   			<td>英語翻訳表記</td>
+	   		<td>歌人の名前の英語翻訳です。翻訳はWilliam N. Porter(1849-1929)の訳によっています</td> 
+  		</tr>
+  		<tr>
+    			<td>owl:sameAs</td>
+   			<td>NDL Authoritiesへのリンク</td>
+	   		<td>国立国会図書館典拠(https://id.ndl.go.jp/auth/ndla)の当該歌人へのリンクです</td> 
+  		</tr>
+  		<tr>
+    			<td>owl:sameAs</td>
+   			<td>DBPediaへのリンク</td>
+	   		<td>DBPedia Japanese (http://ja.dbpedia.org/)の当該歌人へのリンクです</td> 
+  		</tr>
+
+		</table>
+	    </p>
+
+           <p class="article-paragraph">
+              小倉百人一首のオープンデータ画像リスト
+		<table class="line">
+
+		<thead>
+		 <tr>
+	        <th>プロパティ(rdfs:label)</th>
+	        <th>説明:(rdfs:comment)</th>
+  	        <th>詳細（dcterms:description）</th>  
+	        </tr>
+ 		</thead>
+
+  		<tr>
+    			<td>rdfs:label</td>
+   			<td>ラベル</td>
+	   		<td>資料名（所蔵図書館名）を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>dc:title</td>
+   			<td>タイトル</td>
+	   		<td>資料名を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>dc:creator</td>
+   			<td>撰者</td>
+	   		<td>資料の作者・編者を記入しています。通常は藤原定家です</td> 
+  		</tr>
+  		<tr>
+    			<td>dc:contributor</td>
+   			<td>画家、筆写者 等</td>
+	   		<td>画家、筆写者等、当該資料の作成に関与した人物を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>dc:publisher</td>
+   			<td>出版社・版元</td>
+	   		<td>出版社・版元を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>dc:date</td>
+   			<td>出版年</td>
+	   		<td>出版年（元号等をそのまま）リテラルで記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>bibo:owner</td>
+   			<td>原本の所蔵者</td>
+	   		<td>オープンデータ画像を公開している所蔵者名を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>owl:sameAs</td>
+   			<td>原本の所蔵者が提供する書誌データ</td>
+	   		<td>オープンデータ画像を公開している所蔵者が作成した書誌データのURLを記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>dcterms:license</td>
+   			<td>画像の利用条件</td>
+	   		<td>オープンデータ画像の利用条件のURLを記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>schema:image</td>
+   			<td>画像のURL</td>
+	   		<td>当該資料全体の画像のURLを記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>rdfs:seeAlso</td>
+   			<td>IIIFマニュフェスト</td>
+	   		<td>IIIF Presentation APIのマニフェストのURIを記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>dcterms:extent</td>
+   			<td>形態区分</td>
+	   		<td>刊本・写本・錦絵等の形態の別を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>bibo:note</td>
+   			<td>備考</td>
+	   		<td>資料に関するメモです</td> 
+  		</tr>
+  		<tr>
+    			<td>dcterms:hasPart</td>
+   			<td>収録している和歌へのリンク</td>
+	   		<td>翻刻がある場合には、翻刻の和歌のリソースにリンクしています</td> 
+  		</tr>
+		</table>
+	    </p>
+
+           <p class="article-paragraph">
+              各機関で所蔵している小倉百人一首
+		<table class="line">
+
+		<thead>
+		 <tr>
+	        <th>プロパティ(rdfs:label)</th>
+	        <th>説明:(rdfs:comment)</th>
+  	        <th>詳細（dcterms:description）</th>  
+	        </tr>
+ 		</thead>
+
+  		<tr>
+    			<td>rdfs:label</td>
+   			<td>ラベル（和歌のテキスト翻刻）</td>
+	   		<td>和歌のテキスト翻刻です</td> 
+  		</tr>
+  		<tr>
+    			<td>karuta:textOfYomi</td>
+    			<td>読札のテキスト</td>
+  			<td>読札の翻刻テキストです</td>  
+  		</tr>
+
+  		<tr>
+    			<td>karuta:textOfTori</td>
+    			<td>取札のテキスト</td>
+ 	 		<td>取札の翻刻テキストです</td> 
+  		</tr>
+  		<tr>
+    			<td>dc:creator</td>
+   			<td>歌人（作者）のテキスト翻刻</td>
+	   		<td>歌人の名前が資料に出現する場合に翻刻しています</td> 
+  		</tr>
+  		<tr>
+    			<td>dc:contributor</td>
+   			<td>画家・筆者者等</td>
+	   		<td>画家・筆者者等の名前を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>schema:image</td>
+   			<td>画像のURL</td>
+	   		<td>当該和歌の画像のURLを記入しています。画像のURLを1つの画像に複数の和歌が含まれる場合があります。IIIF Image APIを利用できる場合は当該かるた部分への画像リクエストURIを記入しています。</td> 
+  		</tr>
+  		<tr>
+    			<td>karuta:imageOfYomi</td>
+    			<td>読札の画像</td>
+  			<td>読札の画像のURLです。IIIF Image APIを利用できる場合は当該かるた部分への画像リクエストURIを記入しています。</td>  
+  		</tr>
+  		<tr>
+    			<td>karuta:imageOfTori</td>
+    			<td>取札の画像</td>
+ 	 		<td>取札の画像のURLです。IIIF Image APIを利用できる場合は当該かるた部分への画像リクエストURIを記入しています。</td> 
+  		</tr>
+  		<tr>
+    			<td>dcterms:isPartOf</td>
+   			<td>収録書誌へのリンク</td>
+	   		<td>小倉百人一首のオープンデータ画像リストの当該資料へのリンクです</td> 
+  		</tr>
+		</table>
+	    </p>
+	</div>
+        <div class="article">
+            <h3 class="article-paragraph-title">小倉百人一首LODのグラフ（サンプル）</h3>
+                 <p class="article-paragraph">百人一首のデータモデルの設計においては、かるた全般（いろはかるたや郷土かるた）にも適用できるモデルを念頭に置き、設計しています。基本となる概念としての「かるたデータ」に情報を集約し、各古典籍画像はアイテムごとにデータセットを作成してリンクしています。また、歌人については、人物典拠情報として「歌人データ」を作成しています。<br>
+下図は、「春過ぎて夏来にけらし白妙の衣ほすてふ天の香具山」から歌人（持統天皇）および古典籍3点へのリンクをはったグラフです。<a href="https://www.kanzaki.com/works/2009/pub/graph-draw"> RDFグラフの視覚化のウェブサイト</a>に、<a href="../forGraph.ttl"> グラフ作成用のttlファイル</a>を入力して作成しています。
+　　
+                 <center><img class="img-thumbnail" src="../img/graph-draw_ogura_harusu.png"></center>
+          </p>
+
+
+        </div> 
+     </div>
+
+
+    <div class="footer">
+        <div class="footer-nav">
+        <div class="address-body">
+            <strong class="address-body-name">かるたLOD 製作者 Nanako Takahashi</strong>
+        </div>           
+
+            <ul class="footer-nav-group">
+                <li><a href="http://user.linkdata.org/user/tnanako/work"> LinkData</a></li>
+                <li><a href="https://researchmap.jp/tnanako/"></i> Researchmap</a></li>
+                <li><a href="https://www.facebook.com/nanako.takahashi.96">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="footer-text">このホームページは、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">CC-BY</a> で公開しています。各データセットはそれぞれのライセンスに従ってください。</div>
+    </div>
+
+
+    <a href="#top" class="btn-pagetop"><i class="fa fa-arrow-up"></i></a>
+
+</body>
+</html>
