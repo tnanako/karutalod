@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>かるたの語彙</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <!-- アイコンフォントの利用方法 http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+   
+</head>
+
+<body id="top">
+    <div class="nav">
+        <ul class="nav-group">
+            <li><a href="../index.html" class="active"><i class="fa fa-home"></i> ホーム</a></li>
+            <li><a href="../localKaruta.html">郷土かるた</a></li>
+            <li><a href="../ogura.html">小倉百人一首</a></li>
+            <li><a href="../lod.html">LODとは</a></li>
+        </ul>
+    </div>
+  <center><img class="img-thumbnail" src="../img/voc_logo.jpg"></center>
+    <div class="header">
+        <h1 class="header-title">かるたの語彙</h1>
+        <p class="header-description">かるたのLOD(Linked Open Data)のために語彙を定義するサイトです。</p>
+
+    </div>
+
+    <div class="content">
+        <div class="article">
+            <h3 class="article-paragraph-title">かるたの語彙</h3>
+           <p class="article-paragraph">
+		かるたLODでは、一般的な語彙でカバーできるものは一般的な語彙を用いつつ、かるたに特有の語彙は独自定義を用いた。<br>
+		かるたは読札と取札の2枚のカードが1つのセットとなっている。かるたに共通な語彙として、読札のテキスト、取札のテキスト、読札の画像、取札の画像を定義したが、百人一首といろはかるた（郷土かるたを含む）とでは絵札・字札と読札・取札の関係は逆になることに注意を要する。すなわち、百人一首では読札に絵があり、取札は字のみとなる。いろはかるたでは、取札に絵があり、読札は字のみとなる。<br>
+この他に独自定義した語彙としては、いろはかるた用には先頭の一文字（いろは）へのreferenceを、小倉百人一首用には、上の句、下の句、ヨミの表記（現代かな遣い、歴史的かな遣い、ローマ字表記）、決まり字、坊主めくり用の区分を定義した。
+		</p">
+        </div> 
+        <div class="article">
+
+            <h3 class="article-paragraph-title">NameSpace</h3>
+            <p class="article-paragraph">
+		http://karutalod.web.fc2.com/vocabulary/  <br>
+		<a href="karuta_voc.ttl">語彙の定義ファイル（ttl形式）</a>
+	   </p>		　
+        </div> 
+
+        <div class="article">
+            <h3 class="article-paragraph-title">かるたの語彙(独自定義)の一覧</h3>
+
+            <p class="article-paragraph">
+              かるたLODで独自定義した語彙
+		<table class="line">
+
+		<thead>
+		<tr>
+	        <th>プロパティ(rdfs:label)</th>
+	        <th>説明(rdfs:comment)</th>
+  	        <th>詳細(dcterms:descritpion)</th>  
+ <!-- 	        <th>上位のプロパティ(rdfs:subPropertyOf)</th>  -->
+	        </tr>
+ 		</thead>
+
+  		<tr>
+    			<td>textOfYomi</td>
+    			<td>読札のテキスト</td>
+  			<td>読札のテキストです。百人一首の場合は絵札のテキスト、いろはかるたの場合は字札のテキストになります。</td>  
+ <!--  			<td>readOut</td>  -->
+  		</tr>
+  		<tr>
+    			<td>imageOfYomi</td>
+    			<td>読札の画像</td>
+  			<td>読札の画像です。百人一首の場合は絵札の画像、いろはかるたの場合は字札の画像になります。</td>  
+ <!--  			<td>readOut</td>  -->
+  		</tr>
+
+  		<tr>
+    			<td>textOfTori</td>
+    			<td>取札のテキスト</td>
+ 	 		<td>取札のテキストです。百人一首の場合は取札のテキスト、いろはかるたの場合は絵札のテキスト（いろは）になります。</td>
+  <!--	 		<td>PickUp/td>  -->
+  		</tr>
+
+  		<tr>
+    			<td>textOfTori</td>
+	  		<td>取札の画像</td>
+ 	 		<td>取札の画像です。百人一首の場合は取札の画像、いろはかるたの場合は絵札の画像になります。</td>
+  <!--    		<td>PickUp</td>  -->
+  		</tr>
+
+		<tr>
+    			<td>historicalTranscription</td>
+   			<td>ヨミ（歴史的かな遣い）</td>
+	   		<td>読みがなを歴史的かな遣いで記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>transcription</td>
+   			<td>ヨミ（現代かな遣い）</td>
+	   		<td>読みがなを現代かな遣いで記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>roamanTranscription</td>
+   			<td>ヨミ（ローマ字表記）</td>
+	   		<td>読みがなのローマ字表記を記入しています</td> 
+  		</tr>
+
+  		<tr>
+    			<td>uniqueSyllable</td>
+   			<td>決まり字</td>
+	   		<td>百人一首の上の句の決まり字を記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>firstHalf</td>
+   			<td>上の句</td>
+	   		<td>百人一首の上の句の漢字・仮名まじりの表記を記入しています</td> 
+  		</tr> 
+
+  		<tr>
+    			<td>transcriptionOfFirstHalf</td>
+   			<td>上の句のヨミ</td>
+	   		<td>百人一首の上の句のヨミを現代かな遣いで記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>secondHalf</td>
+   			<td>下の句</td>
+	   		<td>百人一首の下の句の漢字・仮名まじりの表記を記入しています</td> 
+  		</tr> 
+
+  		<tr>
+    			<td>transcriptionOfSecondHalf</td>
+   			<td>下の句のヨミ</td>
+	   		<td>百人一首の下の句のヨミを現代かな遣いで記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>bonze</td>
+   			<td>坊主めくり用区分</td>
+	   		<td>百人一首の絵札の人物にあわせて、殿、姫、坊主のいずれかを記入しています</td> 
+  		</tr> 
+
+  		<tr>
+    			<td>initial</td>
+   			<td>先頭の一文字（いろは）</td>
+	   		<td>いろはかるたの先頭の一文字です。</td> 
+  <!--   		<td></td> -->
+  		</tr>
+
+		</table>
+		</p>
+        </div> 
+
+        <div class="article">
+            <h3 class="article-paragraph-title">かるたの種別ごとの語彙</h3>
+            <p class="article-paragraph">
+              百人一首の語彙は、<a href="../ogura.html">小倉百人一首LODのページ</a>をご覧ください。
+	　　</p>
+        </div> 
+
+     </div>
+
+
+    <div class="footer">
+        <div class="footer-nav">
+        <div class="address-body">
+            <strong class="address-body-name">かるたLOD 製作者 Nanako Takahashi</strong>
+        </div>           
+
+            <ul class="footer-nav-group">
+                <li><a href="http://user.linkdata.org/user/tnanako/work"> LinkData</a></li>
+                <li><a href="https://researchmap.jp/tnanako/"></i> Researchmap</a></li>
+                <li><a href="https://www.facebook.com/nanako.takahashi.96">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="footer-text">このホームページは、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">CC-BY</a> で公開しています。各データセットはそれぞれのライセンスに従ってください。</div>
+    </div>
+
+
+    <a href="#top" class="btn-pagetop"><i class="fa fa-arrow-up"></i></a>
+
+</body>
+</html>
