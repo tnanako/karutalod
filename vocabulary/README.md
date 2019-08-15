@@ -1,5 +1,10 @@
-﻿# karutalod/vocabulary
+# karutalod/vocabulary
 かるたLODの語彙の定義ファイルを置いています。
+現在の最新バージョンは3.0です。
+
+## ファイル構成
+* Karuta_voc.ttl 独自定義した語彙をttl形式で提供しています。
+* Karuta_voc_ver3.xlsx かるたLODの各ファイルで使用している語彙をEXCELで解説しています。
 
 ## 最終更新時期
-2019年1月16日
+2019年8月15日

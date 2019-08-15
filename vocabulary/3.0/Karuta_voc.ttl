@@ -1,0 +1,67 @@
+﻿@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/textOfYomi"> rdfs:label "textOfYomi" ;
+	rdfs:comment "読札のテキスト" ;
+	dcterms:description "読札のテキストです。百人一首の場合は絵札のテキスト、いろはかるたの場合は字札のテキストになります。" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/imageOfYomi"> rdfs:label "imageOfYomi" ;
+	rdfs:comment "読札の画像" ;
+	dcterms:description "読札の画像です。百人一首の場合は絵札の画像、いろはかるたの場合は字札の画像になります。" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/textOfTori"> rdfs:label "textOfTori" ;
+	rdfs:comment "取札のテキスト" ;
+	dcterms:description "取札のテキストです。百人一首の場合は取札のテキスト、いろはかるたの場合は絵札のテキスト（いろは）になります。" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/imageOfTori"> rdfs:label "textOfTori" ;
+	rdfs:comment "取札の画像" ;
+	dcterms:description "取札の画像です。百人一首の場合は取札の画像、いろはかるたの場合は絵札の画像になります。" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/historicalTranscription"> rdfs:label "historicalTranscription"> ;
+	rdfs:comment "ヨミ（歴史的かな遣い）" ;
+	dcterms:description "読みがなを歴史的かな遣いで記入しています" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/transcription"> rdfs:label "transcription" ;
+	rdfs:comment "ヨミ（現代かな遣い）" ;
+	dcterms:description "読みがなを現代かな遣いで記入しています" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/transcription"> rdfs:label "roamanTranscription" ;
+	rdfs:comment "ヨミ（ローマ字表記）" ;
+	dcterms:description "読みがなのローマ字表記を記入しています" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/uniqueSyllable"> rdfs:label "uniqueSyllable" ;
+	rdfs:comment "決まり字" ;
+	dcterms:description "百人一首の上の句の決まり字を記入しています" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/firstHalf"> rdfs:label "firstHalf" ;
+	rdfs:comment "上の句" ;
+	dcterms:description "百人一首の上の句の漢字・仮名まじりの表記を記入しています" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/transcriptionOfFirstHalf"> rdfs:label "transcriptionOfFirstHalf" ;
+	rdfs:comment "上の句のヨミ" ;
+	dcterms:description "百人一首の上の句のヨミを現代かな遣いで記入しています" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/secondHalf"> rdfs:label "secondHalf" ;
+	rdfs:comment "下の句" ;
+	dcterms:description "百人一首の下の句の漢字・仮名まじりの表記を記入しています" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/transcriptionOfSecondHalf"> rdfs:label "transcriptionOfSecondHalf" ;
+	rdfs:comment "下の句のヨミ" ;
+	dcterms:description "百人一首の下の句のヨミを現代かな遣いで記入しています" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/bonze"> rdfs:label "bonze" ;
+	rdfs:comment "坊主めくり用区分" ;
+	dcterms:description "百人一首の絵札の人物にあわせて、殿、姫、坊主のいずれかを記入しています" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/initial"> rdfs:label "initial" ;
+	rdfs:comment "先頭の一文字（いろは）" ;
+	dcterms:description "いろはかるたの先頭の一文字です。" .
+
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/annotate"> rdfs:label "annotate" ;
+	rdfs:comment "解説" ;
+	dcterms:description "いかるたの解説・注釈をテキストで記入しています。" .
+
