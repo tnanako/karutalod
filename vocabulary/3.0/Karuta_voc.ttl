@@ -61,7 +61,7 @@
 	rdfs:comment "先頭の一文字（いろは）" ;
 	dcterms:description "いろはかるたの先頭の一文字です。" .
 
-<rdf:Property rdf:about="https://github.com/tnanako/karutalod/annotate"> rdfs:label "annotate" ;
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/annotates"> rdfs:label "annotates" ;
 	rdfs:comment "解説" ;
-	dcterms:description "いかるたの解説・注釈をテキストで記入しています。" .
+	dcterms:description "かるたの解説・注釈をテキストで記入しています。" .
 
