@@ -65,10 +65,10 @@
 	rdfs:comment "解説" ;
 	dcterms:description "かるたの解説・注釈をテキストで記入しています。" .
 
-<rdf:Property rdf:about="https://github.com/tnanako/karutalod/text"> rdfs:label "reference" ;
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/text"> rdfs:label "text" ;
 	rdfs:comment "和歌のテキスト翻刻" ;
 	dcterms:description "和歌のテキスト翻刻です。" .
 
-<rdf:Property rdf:about="https://github.com/tnanako/karutalod/reference"> rdfs:label "reference" ;
+<rdf:Property rdf:about="https://github.com/tnanako/karutalod/references"> rdfs:label "references" ;
 	rdfs:comment "翻刻サイトへのリンク" ;
 	dcterms:description "翻刻テキスト作成に利用した「みんなで翻刻」へリンクしています。" .
