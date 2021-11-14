@@ -38,9 +38,14 @@
                  <ul>
                    <li> <a href="http://idea.linkdata.org/idea/idea1s2398i" >小倉百人一首LODの概要</a></li>
                    <li> <a href="http://idea.linkdata.org/idea/idea1s2399i" >小倉百人一首LOD活用アイデア</a></li>
-
+                   <li> <a href="http://idea.linkdata.org/idea/idea1s2623i" >小倉百人一首LODのIIIF対応</a></li>
+                   <li> <a href="http://idea.linkdata.org/idea/idea1s2854i" >小倉百人一首LODの多言語化</a></li>
+                   <li> <a href="http://idea.linkdata.org/idea/idea1s2928i" >小倉百人一首LODの‌「みんなで翻刻」との連携</a></li>
        		</ul>
-            </p>
+ 
+ 詳細は以下の論文<a href="https://doi.org/10.18919/jkg.71.8_376" >「小倉百人一首LODのデータモデル設計と構築」（『情報の科学と技術』71巻8号 p.376-381 2021年）</a>をご覧ください。
+
+</p>
  
            <h3 class="article-paragraph-title">小倉百人一首LODデータセット</h3>
                 <p class="article-paragraph">
@@ -56,17 +61,36 @@
            	 	<li>  <a href="http://linkdata.org/work/rdf1s6840i" >小倉百首（大阪市立図書館所蔵）</a></li>
            	 	<li>  <a href="http://linkdata.org/work/rdf1s6856i" >小倉百人一首（国文学研究資料館所蔵）</a></li>
           	 	<li>  <a href="http://linkdata.org/work/rdf1s7295i" >小倉百人一首（国文学研究資料館所蔵）</a></li>
-	     	　　    </ul>
+			<li><a href="http://linkdata.org/work/rdf1s8472i" >錦百人一首あつま織（国立国会図書館所蔵）</a></li>
+			<li><a href="http://linkdata.org/work/rdf1s8473i" >百人一首絵抄（国立国会図書館所蔵）</a></li>
+			<li><a href="http://linkdata.org/work/rdf1s8474i" >壽賀多百人一首小倉錦（国文学研究資料館所蔵）</a></li>
+			<li><a href="http://linkdata.org/work/rdf1s8475i" >中院通知和歌書法（京都大学附属図書館所蔵）</a></li>	     	　　    
+			</ul>
+                 <li>  <a href="http://linkdata.org/work/rdf1s8016i" >Translations list of Ogura Hyakunin Isshu</a></li>
+                    <ul>　
+                 	<li>  <a href="http://linkdata.org/work/rdf1s8014i" >English Ogura Hyakunin Isshu translated by Porter</a></li>
+                 	<li>  <a href="http://linkdata.org/work/rdf1s8-15i" >English Ogura Hyakunin Isshu translated by Cley MacCauley</a></li>
+			<li>  <a href="http://linkdata.org/work/rdf1s8099i" > English Ogura Hyakunin Isshu translated by F.V. Dickins</a></li>
+			<li>  <a href="http://linkdata.org/work/rdf1s8100i" >English Ogura Hyakunin Isshu translated by Yone Noguchi</a></li>
+                   </ul>
+
+                 <li>  <a href="http://linkdata.org/work/rdf1s8930i" >小倉百人一首のオープンデータ音声リスト</a></li>
+                    <ul>　
+                 	<li>  <a href="http://linkdata.org/work/rdf1s8931i" >音声百人一首（NHKクリエイティブ・ライブラリー</a></li>
+                 	<li>  <a href="http://linkdata.org/work/rdf1s8932i" >・	One Hundred Verses from Old Japan（Audio on the LibriVox）</a></li>
+                	 </ul>
      	　　     </ul>
+
+
           </p>
 
            <h3 class="article-paragraph-title">小倉百人一首LODデータモデル</h3>
                 <p class="article-paragraph">
 
 		かるたゲームに必要な情報は、<a href="http://linkdata.org/work/rdf1s6834i" >小倉百人一首かるたデータ</a>および<a href="http://linkdata.org/work/rdf1s6833i" >小倉百人一首の歌人</a>の２つのデータセットを用意しています。競技かるたで利用される公式かるたの情報をもとに、かるた遊びや坊主めくりのゲームを作成するために必要な情報をデータ化しています。各要素を整理し、RDFで提供できるようにしています。また、歌枕として詠まれた地名の緯度経度等、他の情報資源ともリンクしました。<br>
-		加えて、百人一首は、かるただけでなく、刊本・写本・錦絵などの形態があり、近年、図書館が所蔵する古典籍画像にオープンなライセンスを付与されて公開されています。これらを、 <a href="http://linkdata.org/work/rdf1s6836i" >小倉百人一首のオープンデータ画像リスト</a>として提供するとともに、オープンデータ画像へのリンクと翻刻をそれぞれの資料ごとに作成しています。<br>
-RDFの作成にあたっては、一般的な語彙を用いつつ、かるたに特有の語彙は独自定義を用いました。かるたは読札と取札の2枚のカードが1つのセットとなっていることが特徴です。百人一首は、いろはかるた（郷土かるたを含む）と逆に読札に絵があり、取札はテキストのみです。語彙については、<a href="../vocabulary/index.html">かるたの語彙のページ</a>もごらんください。
-
+加えて、百人一首は、かるただけでなく、刊本・写本・錦絵などの形態があり、近年、図書館が所蔵する古典籍画像にオープンなライセンスを付与されて公開されています。これらを、 <a href="http://linkdata.org/work/rdf1s6836i" >小倉百人一首のオープンデータ画像リスト</a>として提供するとともに、オープンデータ画像へのリンクと翻刻をそれぞれの資料ごとに作成しています。<br>
+RDFの作成にあたっては、一般的な語彙を用いつつ、かるたに特有の語彙は独自定義を用いました。かるたは読札と取札の2枚のカードが1つのセットとなっていることが特徴です。百人一首は、いろはかるた（郷土かるたを含む）と逆に読札に絵があり、取札はテキストのみです。語彙については、<a href="../vocabulary/index.html">かるたの語彙のページ</a>もごらんください。<br>
+2019年には <a href="http://linkdata.org/work/rdf1s8016i" >英語に翻訳された小倉百人一首のデータ</a>も追加しています。<br>
 
 
 
@@ -87,9 +111,9 @@ RDFの作成にあたっては、一般的な語彙を用いつつ、かるた�
 
 
   		<tr>
-    			<td>rdfs:label</td>
-	  		<td>小倉百人一首のラベル（和歌）</td>
- 	    		<td>リソースのラベルは和歌の全文です。表記は競技かるたの公式版によりました。</td>  
+    			<td>dc:description</td>
+	  		<td>小倉百人一首（和歌）</td>
+ 	    		<td>和歌の全文です。表記は競技かるたの公式版によりました。</td>  
   		</tr>
   		<tr>
     			<td>karuta:historicalTranscription</td>
@@ -353,8 +377,8 @@ RDFの作成にあたっては、一般的な語彙を用いつつ、かるた�
  		</thead>
 
   		<tr>
-    			<td>rdfs:label</td>
-   			<td>ラベル（和歌のテキスト翻刻）</td>
+    			<td>dc:description</td>
+   			<td>和歌のテキスト翻刻</td>
 	   		<td>和歌のテキスト翻刻です</td> 
   		</tr>
   		<tr>
@@ -399,15 +423,333 @@ RDFの作成にあたっては、一般的な語彙を用いつつ、かるた�
 	   		<td>小倉百人一首のオープンデータ画像リストの当該資料へのリンクです</td> 
   		</tr>
 		</table>
+
+
+          <p class="article-paragraph">
+              小倉百人一首の翻訳オープンデータリスト
+		<table class="line">
+
+		<thead>
+		 <tr>
+	        <th>プロパティ(rdfs:label)</th>
+	        <th>説明:(rdfs:comment)</th>
+  	        <th>詳細（dcterms:description）</th>  
+	        </tr>
+ 		</thead>
+
+  		<tr>
+    			<td>rdfs:label</td>
+   			<td>ラベル</td>
+	   		<td>言語と翻訳者を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>dc:title</td>
+   			<td>タイトル</td>
+	   		<td>資料名を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>bibo:translator</td>
+   			<td>翻訳者</td>
+	   		<td>翻訳した人物を記入しています</td> 
+  		</tr>    
+  		<tr>
+    			<td>dcterms:contributor</td>
+   			<td>翻訳者のリソース</td>
+	   		<td>翻訳した人物のNDL Authoritiesのリソースへのリンクを記入しています</td> 
+  		</tr>   
+  		<tr>
+    			<td>dc:publisher</td>
+   			<td>出版社</td>
+	   		<td>出版社を記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>dc:date</td>
+   			<td>出版年</td>
+	   		<td>出版年をリテラルで記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>dcterms:source</td>
+   			<td>CiNiiBooksの書誌</td>
+	   		<td>翻訳の底本となった書誌データ（CiNii Books）へリンクしています。</td> 
+  		</tr> 
+  		<tr>
+    			<td>bibo:note</td>
+   			<td>備考</td>
+	   		<td>データ作成の底本に関する備考を記述しています。</td> 
+  		</tr> 
+  		<tr>
+    			<td>dcterms:hasPart</td>
+   			<td>収録している和歌へのリンク</td>
+	   		<td>翻訳の和歌のリソースにリンクしています</td> 
+  		</tr> 
+		</table>
+
+
+          <p class="article-paragraph">
+              小倉百人一首の翻訳データ
+		<table class="line">
+
+		<thead>
+		 <tr>
+	        <th>プロパティ(rdfs:label)</th>
+	        <th>説明:(rdfs:comment)</th>
+  	        <th>詳細（dcterms:description）</th>  
+	        </tr>
+ 		</thead>
+
+ 		<tr>
+    			<td>dc:description</td>
+   			<td>和歌翻訳のテキスト	</td>
+	   		<td>翻訳した和歌のテキスト本文を記入しています</td> 
+  		</tr>
+  		<tr>
+    			<td>karuta:romanTranscription</td>
+   			<td>英語ローマ字表記</td>
+	   		<td>日本語の和歌のローマ字表記です</td> 
+  		</tr>
+      		<tr>
+    			<td>karuta:annotates</td>
+   			<td>解説・注釈</td>
+	   		<td>かるたの解説・注釈をテキストで記入しています</td> 
+  		</tr>
+      		<tr>
+    			<td>dc:title</td>
+   			<td>タイトル</td>
+	   		<td>翻訳された和歌のタイトルがある場合に記入しています</td> 
+  		</tr>
+      		<tr>
+    			<td>bibo:translationOf</td>
+   			<td>和歌リソース</td>
+	   		<td>日本語の和歌のリソースへのリンクです</td> 
+  		</tr>
+      		<tr>
+    			<td>dc:creator</td>
+   			<td>歌人</td>
+	   		<td>歌人の名前を翻訳本に表記された言語で記入しています</td> 
+  		</tr>
+      		<tr>
+    			<td>dcterms:creator</td>
+   			<td>歌人へのリンク</td>
+	   		<td>歌人のリソースへのリンクです</td> 
+  		</tr>
+      		<tr>
+    			<td>bibo:translator</td>
+   			<td>翻訳者</td>
+	   		<td>翻訳者をテキストで記入しています</td> 
+  		</tr>
+      		<tr>
+    			<td>dcterms:contributor</td>
+   			<td>翻訳者へのリンク</td>
+	   		<td>翻訳者のリソースへのリンクです</td> 
+  		</tr>
+  		<tr>
+    			<td>dc:source</td>
+   			<td>翻訳本のタイトル</td>
+	   		<td>翻訳の底本となった図書のタイトルです</td> 
+  		</tr> 
+  		<tr>
+    			<td>dcterms:isPartOf</td>
+   			<td>収録書誌へのリンク</td>
+	   		<td>小倉百人一首の翻訳オープンデータリストの当該資料へのリンクです</td> 
+  		</tr> 
+  		</table>
+
 	    </p>
+
+
+
+          <p class="article-paragraph">
+              小倉百人一首の音声オープンデータリスト
+		<table class="line">
+
+		<thead>
+		 <tr>
+	        <th>プロパティ(rdfs:label)</th>
+	        <th>説明:(rdfs:comment)</th>
+  	        <th>詳細（dcterms:description）</th>  
+	        </tr>
+ 		</thead>
+		<tr>
+    			<td>rdfs:label</td>
+   			<td>ラベル</td>
+	   		<td>資料名とサイト名を記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>dc:title</td>
+   			<td>タイトル</td>
+	   		<td>資料名を記入しています</td> 
+  		</tr> 		<tr>
+    			<td>schema:readBy</td>
+   			<td>読手・朗読者</td>
+	   		<td>朗読の読み手を記入しています。</td> 
+  		</tr> 
+  		<tr>
+    			<td>dc:publisher</td>
+   			<td>公開者</td>
+	   		<td>公開しているサイトの責任団体を記入しています</td> 
+  		</tr> 
+		<tr>
+    			<td>dc:date</td>
+   			<td>作成・公開日</td>
+	   		<td>作成・公開日を記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>dc:source</td>
+   			<td>公開しているサイト名</td>
+	   		<td>公開しているサイト名を記入しています</td> 
+  		</tr> 
+		<tr>
+    			<td>schema:url</td>
+   			<td>ファイルのURL</td>
+	   		<td>音声データの公開されているURLを記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>schema:encodingFormat</td>
+   			<td>ファイル形式</td>
+	   		<td>音声データのファイル形式を記入しています</td> 
+  		</tr>
+ 		<tr>
+    			<td>schema:duration</td>
+   			<td>継続時間</td>
+	   		<td>音声データの全体の時間を記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>dcterms:license</td>
+   			<td>音声の利用条件</td>
+	   		<td>オープンデータ音声の利用条件のURLを記入しています</td> 
+  		</tr> 
+		<tr>
+    			<td>dcterms:isFormatOf</td>
+   			<td>音声の底本へのリンク</td>
+	   		<td>朗読の底本となっている和歌リソースへのリンクです。</td> 
+  		</tr> 
+  		<tr>
+    			<td>dcterms:hasPart</td>
+   			<td>収録している和歌へのリンク</td>
+	   		<td>音声の和歌のリソースにリンクしています</td> 
+  		</tr> 
+  		</table>
+
+	    </p>
+
+          <p class="article-paragraph">
+              小倉百人一首の音声データ
+		<table class="line">
+
+		<thead>
+		 <tr>
+	        <th>プロパティ(rdfs:label)</th>
+	        <th>説明:(rdfs:comment)</th>
+  	        <th>詳細（dcterms:description）</th>  
+	        </tr>
+ 		</thead>
+
+
+		<tr>
+    			<td>dc:title</td>
+   			<td>タイトル</td>
+	   		<td>朗読された和歌のタイトルを記入しています（音楽の曲名に相当します。）</td> 
+  		</tr> 
+  		<tr>
+    			<td>schema:transcription</td>
+   			<td>朗読のテキスト</td>
+	   		<td>朗読されたテキストの文字起こしをしています</td> 
+  		</tr> 
+		<tr>
+    			<td>karuta:annotates</td>
+   			<td>解説・注釈</td>
+	   		<td>かるたの解説・注釈が朗読されている場合、テキストで文字起こしをています</td> 
+  		</tr> 
+  		<tr>
+    			<td>dc:creator</td>
+   			<td>歌人</td>
+	   		<td>朗読された歌人をリテラルで記入しています</td> 
+  		</tr> 		<tr>
+    			<td>schema:readBy</td>
+   			<td>読手・朗読者</td>
+	   		<td>朗読の読み手を記入しています。</td> 
+  		</tr> 
+  		<tr>
+    			<td>schema:url</td>
+   			<td>ファイルのURL</td>
+	   		<td>音声データの公開されているURLを記入しています</td> 
+  		</tr>
+		 <tr>
+    			<td>schema:encodingFormat</td>
+   			<td>ファイル形式</td>
+	   		<td>音声データのファイル形式を記入しています</td> 
+  		</tr>
+		<tr>
+    			<td>schema:duration</td>
+   			<td>継続時間</td>
+	   		<td>音声データの全体の時間を記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>schema:startTime</td>
+   			<td>始まりタイム</td>
+	   		<td>始まりの時刻をISO8601形式(hh:mm:ss)で記入しています</td> 
+  		</tr> 
+		<tr>
+    			<td>schema:endTime</td>
+   			<td>終わりタイム</td>
+	   		<td>終わりの時刻をISO8601形式(hh:mm:ss)で記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>karuta:startTimeOfFirstHalf</td>
+   			<td>上の句始まりタイム</td>
+	   		<td>上の句の始まりの時刻をISO8601形式(hh:mm:ss)で記入しています</td> 
+  		</tr> 
+		<tr>
+	   		<td>karuta:endTimeOfFirstHalf</td> 
+    			<td>上の句終わりタイム</td>
+   			<td>上の句の終わりの時刻をISO8601形式(hh:mm:ss)で記入しています</td>
+  		</tr> 
+  		<tr>
+    			<td>karuta:startTimeOfSecondHalf</td>
+   			<td>下の句始まりタイム</td>
+	   		<td>下の句の始まりの時刻をISO8601形式(hh:mm:ss)で記入しています</td> 
+  		</tr>
+ 		<tr>
+    			<td>karuta:endTimeOfSecondHalf</td>
+   			<td>下の句終わりタイム</td>
+	   		<td>下の句の終わりの時刻をISO8601形式(hh:mm:ss)で記入しています</td> 
+  		</tr>  
+  		<tr>
+    			<td>dc:sorce</td>
+   			<td>作品全体のタイトル</td>
+	   		<td>朗読の底本となった作品のタイトルです（音楽のアルバム名に相当します）</td> 
+  		</tr> 
+		<tr>
+    			<td>dc:date</td>
+   			<td>作成・公開日</td>
+	   		<td>作成・公開日が判明する場合に記入しています</td> 
+  		</tr> 
+  		<tr>
+    			<td>dcterms:isFormatOf</td>
+   			<td>音声の底本へのリンク</td>
+	   		<td>朗読の底本となっている和歌リソースへのリンクです</td> 
+  		</tr> 
+  		<tr>
+    			<td>dcterms:isPartOf</td>
+   			<td>収録書誌へのリンク</td>
+	   		<td>小倉百人一首の音声オープンデータリストの当該資料へのリンクです</td> 
+  		</tr> 
+  		</table>
+
+	    </p>
+
+
+
 	</div>
         <div class="article">
             <h3 class="article-paragraph-title">小倉百人一首LODのグラフ（サンプル）</h3>
                  <p class="article-paragraph">百人一首のデータモデルの設計においては、かるた全般（いろはかるたや郷土かるた）にも適用できるモデルを念頭に置き、設計しています。基本となる概念としての「かるたデータ」に情報を集約し、各古典籍画像はアイテムごとにデータセットを作成してリンクしています。また、歌人については、人物典拠情報として「歌人データ」を作成しています。<br>
-下図は、「春過ぎて夏来にけらし白妙の衣ほすてふ天の香具山」から歌人（持統天皇）および古典籍3点へのリンクをはったグラフです。<a href="https://www.kanzaki.com/works/2009/pub/graph-draw"> RDFグラフの視覚化のウェブサイト</a>に、<a href="../forGraph.ttl"> グラフ作成用のttlファイル</a>を入力して作成しています。
-　　
-                 <center><img class="img-thumbnail" src="../img/graph-draw_ogura_harusu.png"></center>
-          </p>
+下図は、「春過ぎて夏来にけらし白妙の衣ほすてふ天の香具山」から歌人（持統天皇）および古典籍3点へのリンクをはったグラフです。<a href="https://www.kanzaki.com/works/2009/pub/graph-draw"> RDFグラフの視覚化のウェブサイト</a>に、<a href="../forGraph.ttl"> グラフ作成用のttlファイル</a>を入力して作成しています。<br>
+                 <center><img class="img-thumbnail" src="../img/graph-draw_ogura_harusu.png"></center><br>
+
+下図は、「ちはやふる」の翻訳4点のグラフです。<a href="https://www.kanzaki.com/works/2009/pub/graph-draw"> RDFグラフの視覚化のウェブサイト</a>に、<a href="../forGraph_en.ttl"> 翻訳データのグラフ作成用のttlファイル</a>を入力するとが作成できます。
+                 <center><img width="800" src="../img/Graph_en_chiha.jpg"></center>
+  	        </p>
 
 
         </div> 

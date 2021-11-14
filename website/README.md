@@ -3,4 +3,4 @@
 URL：http://karutalod.web.fc2.com/
 
 ## 最終更新時期
-2019年1月8日
+2021年11月14日

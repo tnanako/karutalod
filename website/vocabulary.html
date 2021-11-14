@@ -43,7 +43,8 @@
 
             <h3 class="article-paragraph-title">NameSpace</h3>
             <p class="article-paragraph">
-		http://karutalod.web.fc2.com/vocabulary/  <br>
+		https://github.com/tnanako/karutalod  <br>
+		※　旧サイトhttp://karutalod.web.fc2.com/vocabulary/から引っ越しました  <br>
 		<a href="karuta_voc.ttl">語彙の定義ファイル（ttl形式）</a>
 	   </p>		　
         </div> 
@@ -64,7 +65,13 @@
 	        </tr>
  		</thead>
 
-  		<tr>
+		<tr>
+  			<td>text</td>
+    			<td>和歌の翻刻テキスト</td>
+ 	 		<td>百人一首の場合、翻訳した和歌のテキスト本文を記入しています。</td>
+
+   		</tr>
+ 		<tr>
     			<td>textOfYomi</td>
     			<td>読札のテキスト</td>
   			<td>読札のテキストです。百人一首の場合は絵札のテキスト、いろはかるたの場合は字札のテキストになります。</td>  
@@ -140,12 +147,43 @@
 	   		<td>百人一首の絵札の人物にあわせて、殿、姫、坊主のいずれかを記入しています</td> 
   		</tr> 
 
-  		<tr>
+		<tr>  		
     			<td>initial</td>
    			<td>先頭の一文字（いろは）</td>
 	   		<td>いろはかるたの先頭の一文字です。</td> 
-  <!--   		<td></td> -->
   		</tr>
+		<tr>  	    				
+			<td>annotates</td>
+    			<td>解説</td>
+ 	 		<td>解説・注釈のテキストを記入しています。</td>
+  		</tr>
+		<tr>  	    				
+			<td>reference</td>
+    			<td>翻刻サイトへのリンク</td>
+ 	 		<td>翻刻テキスト作成に利用した「みんなで翻刻」へリンクしています。</td>
+
+  		</tr>
+
+    			<td>startTimeOfFirstHalf</td>
+   			<td>上の句始まりタイム</td>
+	   		<td>上の句の始まりの時刻をISO8601形式(hh:mm:ss)で記入しています</td> 
+  		</tr> 
+		<tr>
+	   		<td>endTimeOfFirstHalf</td> 
+    			<td>上の句終わりタイム</td>
+   			<td>上の句の終わりの時刻をISO8601形式(hh:mm:ss)で記入しています</td>
+  		</tr> 
+  		<tr>
+    			<td>startTimeOfSecondHalf</td>
+   			<td>下の句始まりタイム</td>
+	   		<td>下の句の始まりの時刻をISO8601形式(hh:mm:ss)で記入しています</td> 
+  		</tr>
+ 		<tr>
+    			<td>endTimeOfSecondHalf</td>
+   			<td>下の句終わりタイム</td>
+	   		<td>下の句の終わりの時刻をISO8601形式(hh:mm:ss)で記入しています</td> 
+  		</tr> 
+
 
 		</table>
 		</p>
